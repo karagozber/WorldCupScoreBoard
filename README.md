@@ -1,0 +1,3 @@
+- ScoreBoardManager object holds business logic and desired functionality can be achieved by using this class.
+- Main program simulates example usage for ScoreBoardManager.
+- Unit tests proves ScoreBoardManager is working as expected.
