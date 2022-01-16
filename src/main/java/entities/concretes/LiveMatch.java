@@ -10,6 +10,12 @@ public class LiveMatch extends Match{
         this.awayScore = 0;
     }
 
+    public LiveMatch(String homeTeam, int homeScore, String awayTeam, int awayScore) {
+        super(homeTeam, awayTeam);
+        this.homeScore = homeScore;
+        this.awayScore = awayScore;
+    }
+
     public int getHomeScore() {
         return homeScore;
     }
@@ -24,5 +30,9 @@ public class LiveMatch extends Match{
 
     public void setAwayScore(int awayScore) {
         this.awayScore = awayScore;
+    }
+
+    public String getMatchSummary() {
+        return homeTeam + " - " + awayTeam + " : " + homeScore + " - " + awayScore;
     }
 }
