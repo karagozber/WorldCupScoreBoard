@@ -35,4 +35,8 @@ public class LiveMatch extends Match{
     public String getMatchSummary() {
         return homeTeam + " - " + awayTeam + " : " + homeScore + " - " + awayScore;
     }
+
+    public Integer getTotalScore() {
+        return homeScore + awayScore;
+    }
 }
